@@ -24,7 +24,7 @@ test('MultiElements Handling', async ({ page }) => {
 
 })
 
-test.only('Button Handling Actions', async ({ page }) => {
+test('Button Handling Actions', async ({ page }) => {
     await page.goto("https://demoqa.com/buttons");
     await page.getByRole('button', { name: 'Click Me', exact: true }).click();
     await expect(page.locator('p#dynamicClickMessage')).toHaveText('You have done a dynamic click');
@@ -34,7 +34,7 @@ test.only('Button Handling Actions', async ({ page }) => {
     await expect(page.locator('p#doubleClickMessage')).toHaveText('You have done a double click');
 })
 
-test.only('Radio Button Action Handling', async ({ page }) => {
+test('Radio Button Action Handling', async ({ page }) => {
     await page.goto("https://practice-automation.com/form-fields/");
     await expect(page).toHaveURL(/practice-automation.com/);
     await expect(page).toHaveTitle(/Practice Automation/);
