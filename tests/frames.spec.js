@@ -21,7 +21,7 @@ test("frames handling ", async ({ page }) => {
 })
 
 
-test.only("W3School frame", async ({ page }) => {
+test("W3School frame", async ({ page }) => {
     await page.goto('https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe');
 
     // 1. Fixed camelCase on frameLocator

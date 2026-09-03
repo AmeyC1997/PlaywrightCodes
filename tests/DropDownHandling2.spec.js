@@ -35,7 +35,7 @@ test('Handle dynamic dropdown', async ({ page }) => {
 });
 
 
-test.only('AutoSuggestion for Google',async ({page})=>{
+test('AutoSuggestion for Google',async ({page})=>{
 await page.goto('https://www.google.com/');
 await page.locator('textarea#APjFqb').focus();
 await page.locator('textarea#APjFqb').fill('Playwright');
